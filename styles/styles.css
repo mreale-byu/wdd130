@@ -20,6 +20,9 @@ h1 {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 aside {
@@ -35,14 +38,6 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-}
-
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
 }
 
 p {
