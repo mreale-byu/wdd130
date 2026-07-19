@@ -1,3 +1,8 @@
+:root {
+    --border-light: 1px solid rgb(0 0 0 / 0.2);
+    --border-solid: 1px solid #000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +31,7 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border-light);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
@@ -56,14 +61,14 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border-solid);
     text-align: center;
 }
 
 /* Class selectors */
 .box {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: var(--border-light);
     padding: 1rem;
     background-color: #fff;
     color: #333;
