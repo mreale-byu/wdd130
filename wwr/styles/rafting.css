@@ -1,11 +1,9 @@
 :root {
-    --primary-color: #055a05;
-    /* forest green */
-    --secondary-color: #f4a261;
+    --primary-color: #fff;
     /* warm sand */
     --accent1-color: #264653;
     /* dark slate blue */
-    --accent2-color: #e9c46a;
+    --accent2-color: #fab700c0;
     /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -20,6 +18,11 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+}
+
+header img {
+    width: 200px;
+    height: auto;
 }
 
 header,
@@ -37,10 +40,13 @@ h2 {
 
 nav,
 p,
-section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+section {
+    margin-top: 16px;
 }
 
 .socialmedia a {
@@ -49,6 +55,7 @@ article {
 
 .hero {
     position: relative;
+    font-weight: 600;
 }
 
 .hero img {
@@ -80,12 +87,13 @@ h2 {
 
 .hero article {
     position: absolute;
-    top: 340px;
-    background-color: var(--secondary-color);
+    top: 335px;
+    background-color: var(--accent2-color);
 }
 
 .hero article img {
     float: right;
     width: 140px;
     height: auto;
+    margin: 5px;
 }
