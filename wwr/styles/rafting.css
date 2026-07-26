@@ -21,11 +21,11 @@ body {
 }
 
 header {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   max-width: 840px;
-   background-color: var(--accent1-color);
-   place-items: center; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 840px;
+    background-color: var(--accent1-color);
+    place-items: center;
 }
 
 header img {
@@ -36,8 +36,8 @@ header img {
 }
 
 nav {
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
@@ -62,7 +62,6 @@ main {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 nav,
@@ -131,7 +130,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-}   
+}
 
 .history img {
     display: block;
@@ -165,7 +164,7 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: var(--accent1-color); 
+    background-color: var(--accent1-color);
     margin: 48px auto;
     height: 4rem;
 }
