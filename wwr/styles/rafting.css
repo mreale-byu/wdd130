@@ -1,9 +1,9 @@
 :root {
     --primary-color: #fff;
     /* warm sand */
-    --accent1-color: #264653;
+    --accent1-color: #554834;
     /* dark slate blue */
-    --accent2-color: #fab700c0;
+    --accent2-color: #747167e0;
     /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -20,15 +20,42 @@ body {
     color: var(--accent1-color);
 }
 
+header {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   max-width: 840px;
+   background-color: var(--accent1-color);
+   place-items: center; 
+}
+
 header img {
-    width: 200px;
+    width: 196px;
     height: auto;
+    margin: 8px;
+    grid-column: 1 / 2;
+}
+
+nav {
+   display: flex;
+   justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    white-space: nowrap;
 }
 
 header,
-main,
-footer {
+footer,
+main {
     width: 840px;
+}
+
+header,
+main {
     margin: 0 auto;
 }
 
@@ -41,12 +68,12 @@ h2 {
 nav,
 p,
 article {
-    margin: 16px;
+    margin: 8px;
     padding: 8px;
 }
 
 section {
-    margin-top: 16px;
+    margin-top: 5px;
 }
 
 .socialmedia a {
@@ -55,7 +82,7 @@ section {
 
 .hero {
     position: relative;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .hero img {
@@ -66,35 +93,91 @@ section {
 
 h1 {
     position: absolute;
-    top: 20px;
+    top: 0px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--primary-color);
 }
 
 h2 {
-    top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--accent1-color);
 }
 
 .hero article {
     position: absolute;
-    top: 335px;
+    top: 240px;
     background-color: var(--accent2-color);
+    height: 120px;
 }
 
 .hero article img {
     float: right;
-    width: 140px;
+    width: 80px;
     height: auto;
     margin: 5px;
     box-shadow: 0 0 10px rgb(65, 45, 2);
+}
+
+.hero p {
+    color: var(--primary-color);
+}
+
+.history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}   
+
+.history img {
+    display: block;
+    width: 290px;
+    height: auto;
+    margin: 5px;
+}
+
+.adventure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.adventure img {
+    display: block;
+    width: 155px;
+    height: auto;
+    margin: 8px;
+}
+
+.adventure figcaption {
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent1-color); 
+    margin: 48px auto;
+    height: 4rem;
+}
+
+.footer p {
+    margin: 8px;
+    padding: 8px;
+    color: var(--primary-color);
+}
+
+.footer img {
+    display: block;
+    width: 32px;
+    height: auto;
 }
