@@ -284,7 +284,7 @@ button[type="submit"] {
     font-size: 1rem;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: rgb(94, 185, 94);
 }
 
