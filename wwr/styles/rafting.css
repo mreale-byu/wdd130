@@ -87,7 +87,7 @@ section {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 0px;
     width: 100%;
@@ -176,4 +176,108 @@ h2 {
     display: block;
     width: 32px;
     height: auto;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 480px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 12px;
+}
+
+.form-row label {
+  font-weight: normal;
+  color:  var(--accent1-color);
+  padding-top: 6px;
+  line-height: 1.2;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  border: 1px solid var(--accent1-color);
+  border-radius: 2px;
+  padding: 6px 8px;
+  font-size: 14px;
+  color: var(--accent1-color);
+  background: #fff;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  color: var(--accent1-color);
+  padding-top: 0;
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+}
+
+.full-width {
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+
+.full-width label {
+  padding-top: 0;
+}
+
+textarea {
+  border: 1px solid var(--accent1-color);
+  border-radius: 2px;
+  padding: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color:  var(--accent1-color);
+  background: #fff;
+  min-height: 100px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color:  rgb(13, 131, 13);
+  color: #fff;
+  border: none;
+  padding: .75rem;
+  font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(94, 185, 94);
+}
+
+/* Placeholder com cor padrão do navegador (não customizada) */
+::placeholder {
+  color: inherit;
+  opacity: 0.3;
 }
