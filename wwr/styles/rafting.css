@@ -381,7 +381,7 @@ p {
     padding: 0px;
     width: 100%;
 }
- 
+
 .hero-home-action .link-button {
     margin: 0px 32px;
     width: 190px;
@@ -408,7 +408,8 @@ p {
     margin: 0px;
 }
 
-.showcase h2, h3 {
+.showcase h2,
+h3 {
     font-weight: bold;
     margin: 4px 0px;
     padding: 0px;
@@ -481,7 +482,6 @@ p {
     padding: 0px;
 }
 
-
 /*
     TRIPS PAGE
 */
@@ -530,6 +530,7 @@ p {
 .trips-header {
     padding: 0px 16px;
     text-align: center;
+    margin: 0px;
 }
 
 /* 
@@ -540,10 +541,9 @@ p {
 
 .trips-table-wrapper {
     overflow-x: auto;
-    border: 2px solid #D9CDBA;
+    border: 2px solid var(--accent3-color);
     background: #FFFFFF;
 }
-
 
 /* Table */
 
@@ -553,7 +553,6 @@ p {
 
     font-size: 15px;
 }
-
 
 /* Header */
 
@@ -573,7 +572,6 @@ p {
     letter-spacing: 0.8px;
     text-transform: uppercase;
 }
-
 
 /* Cells */
 
@@ -597,7 +595,6 @@ p {
     background: #F5EFE4;
 }
 
-
 /* First column */
 
 .trips-table td:first-child {
@@ -616,5 +613,3 @@ p {
     color: #806F58;
     font-size: 13px;
 }
-
-
